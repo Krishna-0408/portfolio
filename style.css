@@ -159,3 +159,17 @@ footer a {
 #contact-form button:hover {
   background: #e84355;
 }
+.resume-button {
+  display: inline-block;
+  background: #ff4c60;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.resume-button:hover {
+  background: #e84355;
+}
