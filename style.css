@@ -1,0 +1,161 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background: #fff;
+  color: #222;
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+h1, h2 {
+  margin-bottom: 20px;
+  color: #e7d212; /* Bold Pink */
+}
+
+a {
+  color: #ff4c60;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#hero {
+  background: linear-gradient(135deg, #ff4c60, #ffa07a);
+  color: white;
+  padding: 100px 20px;
+}
+
+#hero img {
+  width: 550px;
+  border-radius: 20%;
+  margin-top: 20px;
+  border: 5px solid #fff;
+}
+
+#skills ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0;
+}
+
+#skills li {
+  background: #ffd166;
+  color: #222;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+}
+
+/* Project Cards */
+.project-card {
+  background: #f8f8f8;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px auto;
+  width: 80%;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.project-card img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+footer {
+  background: #333;
+  color: white;
+  padding: 30px;
+}
+
+footer a {
+  margin: 0 10px;
+  color: #ffd166;
+}
+@media (max-width: 768px) {
+  #skills ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card {
+    width: 95%;
+  }
+
+  #hero h1 {
+    font-size: 2em;
+  }
+
+  #hero p {
+    font-size: 1.2em;
+  }
+}
+
+#contact {
+  background: #f9f9f9;
+  padding: 80px 20px;
+}
+
+#contact h2 {
+  color: #ff4c60;
+  margin-bottom: 10px;
+}
+
+#contact p {
+  margin-bottom: 30px;
+  font-size: 1.1em;
+}
+
+#contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 1em;
+  transition: border 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #ff4c60;
+  outline: none;
+}
+
+#contact-form button {
+  background: #ff4c60;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#contact-form button:hover {
+  background: #e84355;
+}
